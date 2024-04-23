@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_m2!iq8@fb4j0@p6qenvs_f#94o0cd#elnqkn0l&2rqahpnvj9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -141,3 +141,27 @@ MEDIA_URL = 'media/',
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_GROUP_NAME = "CPE202_DSALGO_Group6_Vince"
+AWS_USERNAME = "Vince_G"
+AWS_ACCESS_KEY_ID = "AKIA2UC3ABOO2YDQY746"
+AWS_SECRET_ACCESS_KEY = "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"
+AWS_STORAGE_BUCKET_NAME = 'presocialpolicy'
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'base.apps.BaseConfig',
+    'base.apps.BaseConfig',
+    'rest_framework',
+    'corsheaders',
+    'profiles',
+    'storages',
+]
