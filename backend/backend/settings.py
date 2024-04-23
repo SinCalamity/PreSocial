@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_m2!iq8@fb4j0@p6qenvs_f#94o0cd#elnqkn0l&2rqahpnvj9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -126,13 +126,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [BASE_DIR / "static-clone",]
+STATICFILES_DIRS = [
+    BASE_DIR / "static_my_project",
+    BASE_DIR / "templates" / "build"]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static-cdn", "static root",)
+STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_root",)
 
-MEDIA_URL = 'media/',
+MEDIA_URL = '/media/',
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")
 
 
 
