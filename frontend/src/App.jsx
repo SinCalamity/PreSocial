@@ -8,13 +8,10 @@ import Pricing from "./Screens/Landing page/Pricing";
 import HomePage from "./Screens/Existing page/HomePage";
 import NewUser from "./Screens/New Page/NewUser";
 
-import Posts from "./Screens/Existing page/Posts";
-import Statistics from "./Screens/Existing page/Statistics";
+
 import ForgotPassword from "./Screens/Landing page/ForgotPassword";
-import Channels from "./Screens/Existing page/Channels";
 import Profile from "./Screens/Existing page/Profile";
-import Messages from "./Screens/Existing page/Messages";
-import Notifications from "./Screens/Existing page/Notifications";
+
 import SignUp from "./Screens/Landing page/Signup";
 import Login from "./Screens/Landing page/Login";
 import Settings from "./Screens/Existing page/Settings";
@@ -40,12 +37,7 @@ function App() {
         <Route path="/HomePage" element={<HomePage/>}/>
         <Route path="/NewUser" element={<NewUser/>}/>
         <Route path="/Settings" element={<Settings/>}/>
-        <Route path="/Posts" element={<Posts/>}/>
-        <Route path="/Statistics" element={<Statistics/>}/>
-        <Route path="/Channels" element={<Channels/>}/>
         <Route path="/Profile" element={<Profile/>}/>
-        <Route path="/Messages" element={<Messages/>}/>
-        <Route path="/Notifications" element={<Notifications/>}/>
         <Route path="/creator/" element={<CreatorsScreen/>}/>
         <Route path="/creator/:id" element={<CreatorDetailed/>}/>
         <Route path="/Settings/AccountDetails" element={<AccountDetails/>}/>

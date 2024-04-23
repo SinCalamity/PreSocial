@@ -37,7 +37,12 @@ function Basic() {
             />
             </Container>
           Country of residence
-          <Container>Country</Container>
+          <Container>
+          <input type='text'
+            placeholder='country'
+            style={{color: "white", background: "black",width: "60vh"}}
+            />
+          </Container>
         </Card.Body>
     </Card>
         </Container>

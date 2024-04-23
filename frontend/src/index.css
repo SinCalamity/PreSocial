@@ -250,3 +250,75 @@ cursor: pointer;
   border-radius: 1.5rem;
   color: white;
   }
+
+  .feed {
+    flex: 0.5;
+    border-right: 1px solid;
+    min-width: fit-content;
+    overflow-y: scroll;
+  }
+
+  .feed_header{
+    position: sticky;
+    top: 0 ;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid;
+    padding: 15px 20px;
+  }
+
+  .feed_header h2{
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .feed::-webkit-scrollbar{
+    display: none;
+  }
+
+  .feed{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .tweetbox-input img{
+    border-radius: 50%;
+    height: 5vh;
+
+  }
+
+  .tweetBox{
+    padding-bottom: 3vh;
+    border-bottom: 4vh solid var(--twitter-background);
+    padding-right: 3vh;
+    
+  }
+
+  .tweetBox form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tweetbox-input{
+    display: flex;
+    padding: 8vh;
+  }
+
+  .tweetbox-input input{
+    flex: 1;
+    margin-left: 8vh;
+    font-size: 26px;
+    border-radius: 5vh;
+    border: none; 
+    outline: none;
+  }
+
+  .tweetbox_tweetButton {
+    color: white;
+    font-weight: 900;
+    border-radius: 10vh;
+    border: none;
+    width: 10vh;
+    height: 6vh;
+    margin-left: auto;
+  }
