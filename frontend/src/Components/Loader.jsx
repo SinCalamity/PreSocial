@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import {Spinner} from 'react-bootstrap'
 function Loader() {
@@ -19,3 +20,4 @@ function Loader() {
 }
 
 export default Loader
+*/

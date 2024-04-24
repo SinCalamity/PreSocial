@@ -1,3 +1,4 @@
+/*
 import { CREATOR_LIST_FAIL, CREATOR_LIST_REQUEST, CREATOR_LIST_SUCCESS } from "../Constants.jsx/creatorConstants";
 export const creatorListReducer =(state={creators:[]},action)=>{
     switch (action.type) {
@@ -11,3 +12,4 @@ export const creatorListReducer =(state={creators:[]},action)=>{
             return state
     }
 }
+*/

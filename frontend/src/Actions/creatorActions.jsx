@@ -1,3 +1,4 @@
+/*
 import { CREATOR_LIST_FAIL, CREATOR_LIST_REQUEST, CREATOR_LIST_SUCCESS } from "../Constants.jsx/creatorConstants";
 const listCreators = () => async(dispatch) => {
     try {
@@ -19,3 +20,4 @@ const listCreators = () => async(dispatch) => {
         });
     }
 };
+*/

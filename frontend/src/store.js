@@ -1,4 +1,4 @@
-import {combineReducers, configureStore} from '@reduxjs/toolkit'
+/*import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import {thunk} from 'redux-thunk'
 import { creatorListReducer } from './Reducers/cretorReducers'
 const reducer = combineReducers ({
@@ -18,3 +18,4 @@ const store = configureStore({
 })
 
 export default store
+*/

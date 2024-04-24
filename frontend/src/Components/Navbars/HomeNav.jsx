@@ -7,13 +7,14 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 function HomeNav() {
-    const userLogin = useSelector((state) => state.userLogin);
+   /* const userLogin = useSelector((state) => state.userLogin);
     const {userInfo} = userLogin;
     const dispatch = useDispatch();
 
     const logoutHandler = () => {
         dispatch(logout());
     }
+    */
 return (
     <Navbar className="fixed-top" style={{position:"fixed",top:"0", width: "100%" }} expand="lg" bg='primary' variant='dark' collapseOnSelect>
         <Container>
