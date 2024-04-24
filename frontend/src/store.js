@@ -1,9 +1,9 @@
-import {configureStore} from '@reduxjs/toolkit'
+import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import {thunk} from 'redux-thunk'
-
-const reducer = {
-
-}
+import { creatorListReducer } from './Reducers/cretorReducers'
+const reducer = combineReducers ({
+creatorList: creatorListReducer
+})
 
 const initialState = {
 
