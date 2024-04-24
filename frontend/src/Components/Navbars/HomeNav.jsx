@@ -37,9 +37,7 @@ return (
             </Container>
             <Nav className='me-auto'>
             <LinkContainer to="/Login">
-                <Nav.Link>
-                <i className='fas fa-user'></i>    Login
-                </Nav.Link>
+                <Nav.Link>Login</Nav.Link>
                 </LinkContainer>
 
             </Nav>
