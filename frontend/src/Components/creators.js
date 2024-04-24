@@ -1,4 +1,4 @@
-/*const creators = [
+const creators = [
   {
     '_id': '1',
     'name': 'Moosick Man',
@@ -33,4 +33,4 @@
     'numReviews': 12,
   },
 ]
-export default creators*/
+export default creators
