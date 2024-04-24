@@ -37,9 +37,11 @@ return (
             </Navbar.Collapse>
             </Container>
             <Nav className='me-auto'>
+           
             <LinkContainer to="/Login">
-                <Nav.Link>Login</Nav.Link>
-                </LinkContainer>
+            
+                <Nav.Link><i class="fas fa-user"/>Login</Nav.Link>
+            </LinkContainer>
 
             </Nav>
             
