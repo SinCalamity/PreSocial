@@ -29,10 +29,7 @@ return (
             <LinkContainer to="/Login">
                 <Nav.Link>Login</Nav.Link>
                 </LinkContainer>
-                
-                <LinkContainer to="/SignUp">
-                <Nav.Link>Sign Up</Nav.Link>
-            </LinkContainer>
+
             </Nav>
             
     </Navbar>
