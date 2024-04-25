@@ -20,7 +20,7 @@ import AccountDetails from "./Screens/Existing page/Settings/AccountDetails";
 import Membership from "./Screens/Existing page/Settings/Membership";
 import CreatorsScreen from "./Screens/Existing page/Creators";
 import CreatorDetailed from "./Screens/Existing page/CreatorDetailed";
-
+import Shipping from "./Screens/Existing page/Paying/Shipping";
 function App() {
   return (
     <Router>
