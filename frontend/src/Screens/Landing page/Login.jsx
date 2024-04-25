@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {LinkContainer} from 'react-router-bootstrap'
-import {Nav} from 'react-bootstrap'
+import {LinkContainer, } from 'react-router-bootstrap'
+import {Nav, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 
 function Login() {
@@ -38,8 +38,12 @@ function Login() {
                 <label><input type='checkbox'/>Remember Me</label>
             </div>
         </div>
+        <Container style={{paddingLeft: "15vh", paddingBottom: "2vh", color: "black"}}>
         
-        
+        <LinkContainer to="/SignUp">
+            <Nav.Link>Not Registered yet? Sign Up here</Nav.Link>
+        </LinkContainer>
+        </Container>
         <div>
         <Link to="/ForgotPassword">
         <div className='forgot-password'>Forgot Password?</div>
@@ -49,9 +53,7 @@ function Login() {
             <a href="/HomePage">
             <div className='continue'>Continue</div>
             </a>
-            <LinkContainer to="/SignUp">
-            <Nav.Link>Sign Up here</Nav.Link>
-            </LinkContainer>
+            
             </div>
         
     </div>

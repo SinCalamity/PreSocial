@@ -87,7 +87,7 @@ images{
 .forgot-password span{
   color: black;
   cursor: pointer;
-
+  text-decoration: none;
 }
 
 .forgot-screen{
@@ -201,22 +201,6 @@ cursor: pointer;
     }
 
 
-  a:link {
-    text-decoration: none;
-  }
-
-  a:visited {
-    text-decoration: none;
-  }
-
-  a:hover{
-    color: blue;
-  }
-
-  a:active{
-    color: pink;
-  }
-
   .settingform{
   position: absolute;
   display: flex;
@@ -322,3 +306,11 @@ cursor: pointer;
     height: 6vh;
     margin-left: auto;
   }
+
+.forgot-password:link{
+  text-decoration: none;
+}
+
+.forgot-password:hover{
+  color: aqua;
+}

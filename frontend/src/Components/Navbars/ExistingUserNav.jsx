@@ -17,25 +17,7 @@ return (
             <Nav.Link>Creators</Nav.Link>
         </LinkContainer>
 
-        <LinkContainer to="/Statistics">
-            <Nav.Link>Statistics</Nav.Link>
-        </LinkContainer>
-            
-        <LinkContainer to="/Posts">
-            <Nav.Link>Posts</Nav.Link>
-        </LinkContainer>
-
-        <LinkContainer to="/Channels">
-            <Nav.Link>Channels</Nav.Link>
-        </LinkContainer>
-
-        <LinkContainer to="/Messages">
-            <Nav.Link>Messages</Nav.Link>
-        </LinkContainer>
-
-        <LinkContainer to="/Notifications">
-            <Nav.Link>Notifications</Nav.Link>
-        </LinkContainer>
+        
         </Nav>
         </Navbar.Collapse>
         </Container>

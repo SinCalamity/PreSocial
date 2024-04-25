@@ -5,6 +5,7 @@ function NewUser() {
     <div style={{paddingTop: "12vh" }}>
       Hello there, new user choose which plan you would like free or paid 
       {/* use same thing on pricing*/}
+      
     </div>
   )
 }

@@ -20,7 +20,7 @@ import AccountDetails from "./Screens/Existing page/Settings/AccountDetails";
 import Membership from "./Screens/Existing page/Settings/Membership";
 import CreatorsScreen from "./Screens/Existing page/Creators";
 import CreatorDetailed from "./Screens/Existing page/CreatorDetailed";
-
+import Shipping from "./Screens/Existing page/Paying/Shipping";
 function App() {
   return (
     <Router>
@@ -43,6 +43,8 @@ function App() {
         <Route path="/Settings/AccountDetails" element={<AccountDetails/>}/>
         <Route path="/Settings/Basic" element={<Basic/>}/>
         <Route path="/Settings/MemberShips" element={<Membership/>}/>
+        <Route path='/shipping' element={<Shipping/>}/>
+
 
       </Routes>
       
