@@ -43,6 +43,8 @@ function App() {
         <Route path="/Settings/AccountDetails" element={<AccountDetails/>}/>
         <Route path="/Settings/Basic" element={<Basic/>}/>
         <Route path="/Settings/MemberShips" element={<Membership/>}/>
+        <Route path='/shipping' element={<Shipping/>}/>
+
 
       </Routes>
       

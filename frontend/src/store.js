@@ -17,5 +17,17 @@ const store = configureStore({
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
 })
 
+const shippingAddressFormStorage = localstorage.getItem('shippingAddress') ?
+    JSON.parse(localStorage.getItem('shippingAddress')) : {}
+
+const initialState = {
+    cart: {
+        cartItems: cartItemsFromStorage,
+        shippinhAddress: shippingAddressFromStorage
+    },
+    userlogin: {userInfo: userInfoFromStorage}
+}
+
+
 export default store
 */

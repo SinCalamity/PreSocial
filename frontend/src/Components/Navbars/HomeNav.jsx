@@ -16,7 +16,7 @@ function HomeNav() {
     }
     */
 return (
-    <Navbar className="fixed-top" style={{position:"fixed",top:"0", width: "100%" }} expand="lg" bg='primary' variant='dark' collapseOnSelect>
+    <Navbar  style={{ width: "100%" }} expand="lg" bg='primary' variant='dark' collapseOnSelect>
         <Container>
             
                 <NavLink to="/" >
@@ -37,7 +37,6 @@ return (
             </Navbar.Collapse>
             </Container>
             <Nav className='me-auto'>
-           
             <LinkContainer to="/Login">
             
                 <Nav.Link><i class="fas fa-user"/>Login</Nav.Link>
