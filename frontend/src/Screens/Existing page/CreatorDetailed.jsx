@@ -1,8 +1,22 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
+import { Link, useParams } from 'react-router-dom'
 import {Row, Col, Image, ListGroup, Button, Container, Card} from 'react-bootstrap'
-import creators from '../../Components/creators'
+import creators from '../creators'
+import axios from 'axios'
+
+function CreatorsScreen() {
+    const [creator, setCreator] = useState([])
+
+    useEffect(() => {
+     async function fetchCreator() {
+       const {data} = await axios.get('http://127.0.0.1:8000/api/creators/')
+       setCreator(data)
+     }
+     fetchCreator()
+   }, [])
+}
+
+
 function CreatorDetailed() {
     const {id} = useParams()
     const creator = creators.find((c) => c._id === id)
