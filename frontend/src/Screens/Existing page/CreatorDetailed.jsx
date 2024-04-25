@@ -1,10 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {Row, Col, Image, ListGroup, Button, Container, Card} from 'react-bootstrap'
-import creators from '../../Components/creators'
+// import creators from '../../Components/creators'
 import axios from 'axios'
 
 function CreatorsScreen() {
+    
+
+function CreatorDetailed() {
+    const {id} = useParams()
     const [creator, setCreator] = useState([])
 
     useEffect(() => {
@@ -16,10 +20,6 @@ function CreatorsScreen() {
    }, [])
 }
 
-
-function CreatorDetailed() {
-    const {id} = useParams()
-    const creator = creators.find((c) => c._id === id)
   return (
     <Container style={{paddingTop: "15vh"}}>
     <Row>
