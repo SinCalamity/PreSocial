@@ -1,6 +1,7 @@
-from django.db import models
+from django.contrib import admin
 import os
 import random
+
 
 def get_filename_ext(filepath):
     base_name = os.path.basename(filepath)
