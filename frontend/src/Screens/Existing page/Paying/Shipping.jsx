@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React from 'react'
-import { Button, Form } from "react-bootstrap"
+import { Button, Form, Container } from "react-bootstrap"
 function Shipping() {
     const [address, setAddress] = useState('')
     const [city, setCity] = useState('')
@@ -13,7 +13,7 @@ function Shipping() {
     }
 
   return (
-    <FormContainer>
+    <Container>
        <h1>Shipping</h1>
        <Form onSubmit={submithandler}>
         <Form.Group controlId='address'>
@@ -64,7 +64,7 @@ function Shipping() {
             Continue
         </Button>
        </Form>
-    </FormContainer>
+    </Container>
   )
 }
 

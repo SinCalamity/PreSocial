@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
-import creators from '../creators'
-import Creator from '../Components/Creator'
+import creators from '../../Components/creators'
+import Creator from '../../Components/Creator'
 import axios from 'axios'
 
 function CreatorsScreen() {

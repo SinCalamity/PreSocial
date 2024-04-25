@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {Row, Col, Image, ListGroup, Button, Container, Card} from 'react-bootstrap'
-import creators from '../creators'
+import creators from '../../Components/creators'
 import axios from 'axios'
 
 function CreatorsScreen() {

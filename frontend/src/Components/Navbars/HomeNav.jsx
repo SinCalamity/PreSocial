@@ -16,7 +16,7 @@ function HomeNav() {
     }
     */
 return (
-    <Navbar  style={{ width: "100%" }} expand="lg" bg='primary' variant='dark' collapseOnSelect>
+    <Navbar  className="fixed-top" style={{position:"fixed",top:"0", width: "100%" }} expand="lg" bg='primary' variant='dark' collapseOnSelect>
         <Container>
             
                 <NavLink to="/" >
