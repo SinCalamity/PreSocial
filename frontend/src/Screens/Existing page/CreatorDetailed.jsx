@@ -4,7 +4,7 @@ import {Row, Col, Image, ListGroup, Button, Container, Card} from 'react-bootstr
 // import creators from '../../Components/creators'
 import axios from 'axios'
 
-function CreatorsScreen() {
+
     
 
 function CreatorDetailed() {
@@ -13,12 +13,12 @@ function CreatorDetailed() {
 
     useEffect(() => {
      async function fetchCreator() {
-       const {data} = await axios.get('http://127.0.0.1:8000/api/creators/')
+       const {data} = await axios.get('http://127.0.0.1:8000/api/creators/${id}')
        setCreator(data)
      }
      fetchCreator()
    }, [])
-}
+
 
   return (
     <Container style={{paddingTop: "15vh"}}>
@@ -72,5 +72,6 @@ function CreatorDetailed() {
     </Container>
   )
 }
+
 
 export default CreatorDetailed
