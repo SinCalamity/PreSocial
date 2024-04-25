@@ -23,21 +23,21 @@ return (
             
                 <Col className='text-right' color='black'>Copyright &copy; 2024 PreSocial All Rights Reserved</Col>
                     <Col className='call' color='black'>
-                    Visit Us&nbsp;&nbsp;
-                    <Link to="https://github.com/" target="_blank">
-                    <i class="fa-brands fa-github fa-2x"></i>
+                    Visit Us
+                    <Link to="https://github.com/" target="_blank" style={{paddingLeft: "3vh"}}>
+                    <i class="fa-brands fa-github fa-lg"></i>
+                    </Link>
+                    
+                    <Link to="https://www.google.com/" target="_blank" style={{paddingLeft: "3vh"}}>
+                    <i class="fa-brands fa-google fa-lg"></i>
+                    </Link>
+                    
+                    <Link to="https://www.facebook.com/" target="_blank" style={{paddingLeft: "3vh"}}>
+                    <i class="fa-brands fa-facebook-f fa-lg"></i>
                     </Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="https://www.google.com/" target="_blank">
-                    <i class="fa-brands fa-google fa-2x"></i>
-                    </Link>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="https://www.facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook-f fa-2x"></i>
-                    </Link>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="https://twitter.com/" target="_blank">
-                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <Link to="https://twitter.com/" target="_blank" style={{paddingLeft: "3vh"}}>
+                    <i class="fa-brands fa-twitter fa-lg"></i>
                     </Link>
                 </Col>
             </Row>
