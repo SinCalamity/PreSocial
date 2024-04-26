@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
+
 MIDDLEWARE = [
     'corsheader.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -184,3 +185,15 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainSlidingSerializer",
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
+
+INSTALLED_APPS = [
+    # Other installed apps
+    'corsheaders',
+    # Rest of the installed apps
+]
+
+MIDDLEWARE = [
+    # Other middleware classes
+    'corsheaders.middleware.CorsMiddleware',
+    # Rest of the middleware classes
+]

@@ -13,7 +13,8 @@ urlpatterns = [
     path('', views.getRoutes, name="routes"),
     path('creators/', views.getCreators, name="creators"),
     path('users/profile/', views.getUserProfile, name="user-profile"),
-    path('creators/<str:pk>', views.getCreator, name='creator'),   
+    path('creators/<str:pk>', views.getCreator, name='creator'),
+    path('admin/', admin.site.urls),   
 ] 
 
 if settings.DEBUG:
